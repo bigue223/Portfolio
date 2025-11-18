@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Youssef Abidi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <a href="#home" class="logo"><span>Mr</span> Youssef</a>
+
+            <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="links">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li ><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/youssef.abidi.967591" class="facebook" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/youssefabidi224/" class="ig" target="_blank" rel="noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/bigue223" class="github" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-sec">
+            <div class="container hero-grid">
+                <div class="div-text">
+                    <h1>Youssef Abidi</h1>
+                    <span>Computer Science Student</span>
+                    <p>
+                        Étudiant en informatique à Sesame University, passionné par le développement web,
+                        mobile et logiciel. Motivé pour mettre en pratique mes connaissances et contribuer à des projets innovants.
+                    </p>
+                    <a href="#projects" class="btn">Voir mes travaux</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <p>
+                    Je suis étudiant en dernière année, spécialisé en développement frontend et backend. J'aime créer
+                    des interfaces propres et des applications performantes.
+                </p>
+                <div class="about-grid">
+                    <div>
+                        <h3>Formation</h3>
+                        <p>Licence  en Informatique — Sesame University</p>
+                    </div>
+                    <div>
+                        <h3>Intérêts</h3>
+                        <p>Web, Mobile, IA, Security</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <h4>HTML / CSS</h4>
+                        <div class="bar"><div class="progress" style="width:90%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <h4>JavaScript</h4>
+                        <div class="bar"><div class="progress" style="width:50%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Angular</h4>
+                        <div class="bar"><div class="progress" style="width:70%"></div></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Spring Boot</h4>
+                        <div class="bar"><div class="progress" style="width:48%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <article class="card">
+                        <img src="flappy-bird.png" alt="Flappy Bird Game" />
+                        <h3>Flappy Bird Game</h3>
+                        <p>Développé avec Unity et C#. Un jeu amusant et addictif.</p>
+                        <a href="https://github.com/bigue223/flappy-bird" target="_blank" rel="noreferrer" class="card-btn">Voir le projet</a>
+                    </article>
+                    <article class="card">
+                        <img src="project-placeholder.png" alt="Application Météo" />
+                        <h3>Application Météo</h3>
+                        <p>Application Android développée avec Java et Android Studio.</p>
+                        <a href="https://github.com/bigue223/weather-app" target="_blank" rel="noreferrer" class="card-btn">Voir le projet</a>
+                    </article>
+                    <article class="card">
+                        <img src="project-placeholder.png" alt="API Node.js" />
+                        <h3>API Node.js</h3>
+                        <p>Backend API développée avec Node.js et Express.</p>
+                        <a href="https://github.com/bigue223/node-api" target="_blank" rel="noreferrer" class="card-btn">Voir le projet</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-grid">
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" name="name" placeholder="Nom" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Me contacter</h3>
+                        <p>Email: youssef.abidi224@gmail.com</p>
+                        <p>Téléphone: +216 27 472 054</p>
+                        <p>LinkedIn / GitHub / Instagram</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Youssef Abidi — Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
